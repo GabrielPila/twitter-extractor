@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Data
+*.csv
+*.parquet
+*.tsv
+*.feather
+*.xlsx
+
 # C extensions
 *.so
 

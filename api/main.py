@@ -31,7 +31,7 @@ for i in tqdm(list(range(num_steps))):
     params = create_url(keyword, start, end, max_results)
     json_response = connect_to_endpoint(search_url, headers, params)
     timestamp = str(datetime.datetime.now())[:-4]
-    end_file = f'start_{start.split("+")[0]}_end_{end.split("+")[0]}'
+    end_file = f'{keyword.split(" ")[0]}_start_{start.split("+")[0]}_end_{end.split("+")[0]}'
 
     data = pd.DataFrame(json_response['data'])
     data['keyword'] = keyword
