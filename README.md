@@ -4,7 +4,7 @@ Extractor de Twitter
 
 ## Instrucciones:
 
-1. Clonar el repositorio: `git clone`
+1. Clonar el repositorio: `git clone git@github.com:GabrielPila/twitter-extractor.git`
 2. Ingresar al repositorio: `cd twitter-extractor`
 3. Crear un ambiente virtual: `virtualenv venv`
 4. Activar ambiente virtual: `source venv/bin/activate`
