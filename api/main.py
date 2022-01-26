@@ -30,6 +30,10 @@ for i in tqdm(list(range(num_steps))):
 
     params = create_url(keyword, start, end, max_results)
     json_response = connect_to_endpoint(search_url, headers, params)
+
+    if json_response['meta']['result_count'] == 0:
+        continue
+
     timestamp = str(datetime.datetime.now())[:-4]
     end_file = f'{keyword.split(" ")[0]}_start_{start.split("+")[0]}_end_{end.split("+")[0]}'
 
