@@ -1,5 +1,6 @@
 from importlib.metadata import files
 import pandas as pd
+from tqdm import tqdm
 import os
 
 PATH_DATA = 'data'
@@ -18,7 +19,8 @@ def save_consolidated(path, start='dataTW_GP_', end='_start'):
     for root in roots:
         root_files = [x for x in files_data if root in x]
         df_collector = pd.DataFrame()
-        for file in root_files:
+        print(root)
+        for file in tqdm(root_files):
             df_i = pd.read_csv(os.path.join(path, file))
             df_collector = df_collector.append(df_i).reset_index(drop=True)
 
