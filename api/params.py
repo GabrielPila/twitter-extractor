@@ -1,6 +1,6 @@
 search_url = "https://api.twitter.com/2/tweets/search/recent" #Change to the endpoint you want to collect data from
-keyword = "@JaimeChincha -is:retweet lang:es" 
-start_time = "2022-02-18T14:20:00.000Z" # start of the extraction
+keyword = "@PedroCastilloTe -is:retweet lang:es" 
+start_time = "2022-02-13T21:50:00.000Z" # start of the extraction
 #start_time = "2022-02-10T09:00:00.000Z" # start of the extraction
 #end_time = "2022-01-23T00:00:00.000Z"
 step_time = 10 # minutes
